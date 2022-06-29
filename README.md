@@ -43,3 +43,13 @@ Il est évident que vous pouvez faire du HTML / CSS / PHP et même du JS de mani
 ## Utiliser Vue JS sur une page HTML ou PHP
 
 L'avantage de cette architecture est que vous pouvez facilement ajouter un composant Vue dans n'importe quel fichier html ou php que vous allez créer.
+
+## Déployer le code
+
+Lorsque votre projet ira en production, vous n'aurez pas le serveur de développement, il faudra donc faire une compilation des fichiers JS :
+
+```bash
+cd vite && npm run build
+```
+
+Les fichiers compilés vont se retrouver dans le dossier `public/dist`. A chaque modification des fichiers Vue, il faut recompiler.

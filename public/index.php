@@ -1,3 +1,6 @@
+<?php
+    require_once __DIR__ . '/../helpers.php';
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -8,7 +11,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&amp;display=swap">
     <link rel="stylesheet" href="css/style.css">
 
-    <script type="module" src="http://localhost:3000/main.js"></script>
+    <?= vite('main.js') ?>
 </head>
 <body>
     <?php echo 'Ceci est du PHP'; ?>

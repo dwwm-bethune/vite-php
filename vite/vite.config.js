@@ -6,6 +6,16 @@ export default defineConfig({
   plugins: [vue()],
 
   root: 'src',
+  base: process.env.APP_ENV === 'development' ? '/' : '/dist/',
+
+  build: {
+    outDir: '../../public/dist',
+    emptyOutDir: true,
+    manifest: true,
+    rollupOptions: {
+      input: 'src/main.js'
+    }
+  },
 
   resolve: {
     alias: {

@@ -1,0 +1,13 @@
+{
+  "main.js": {
+    "file": "assets/main.be3d403f.js",
+    "src": "main.js",
+    "isEntry": true,
+    "css": [
+      "assets/main.51cfdec3.css"
+    ],
+    "assets": [
+      "assets/logo.17e50649.svg"
+    ]
+  }
+}
