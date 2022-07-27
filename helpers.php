@@ -15,7 +15,7 @@ function viteIsDev($entry) {
         return $isDev;
     }
 
-    return $isDev = (bool) @file_get_contents('http://localhost:3000/'.$entry);
+    return $isDev = (bool) @file_get_contents('http://localhost:5173/'.$entry);
 }
 
 /**
@@ -29,7 +29,7 @@ function vite($entry) {
  * Permet de générer la bonne balise script.
  */
 function viteJs($entry) {
-    $url = viteIsDev($entry) ? 'http://localhost:3000/'.$entry : viteAsset($entry);
+    $url = viteIsDev($entry) ? 'http://localhost:5173/'.$entry : viteAsset($entry);
 
     return $url ? '<script type="module" src="'.$url.'"></script>' : '';
 }
